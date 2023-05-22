@@ -1,1 +1,11 @@
 # Slider
+
+## Key Functionalities
+
+#### sass-lang - dokumentacja
+
+1. Nesting - zagniezadzanie  [=> docs](https://sass-lang.com/documentation/style-rules#nesting)
+2. Parent Selector [=> docs](https://sass-lang.com/documentation/style-rules/parent-selector)
+3. Imports [=> docs](https://sass-lang.com/documentation/at-rules/import)
+4. Variables [=> docs](https://sass-lang.com/documentation/variables)
+5. Functions [=> docs](https://sass-lang.com/documentation/values/functions)
