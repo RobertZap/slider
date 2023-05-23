@@ -389,13 +389,14 @@ html, body {
 .slides {
   position: relative;
   overflow: hidden;
-  min-height: 18.75rem;
+  min-height: 31.25rem;
 }
 .slides__slide {
   position: absolute;
   left: 0;
   width: 100%;
-  min-height: 18.75rem;
+  min-height: 31.25rem;
+  animation-duration: 10s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   background-size: cover;
@@ -404,17 +405,17 @@ html, body {
 }
 .slides__slide:nth-child(1) {
   animation-name: slide-1;
-  background-image: url("../images//slide-1.jpeg");
+  background-image: url("../images/slide-1.jpeg");
   left: 0%;
 }
 .slides__slide:nth-child(2) {
   animation-name: slide-2;
-  background-image: url("../images//slide-2.jpeg");
+  background-image: url("../images/slide-2.jpeg");
   left: 100%;
 }
 .slides__slide:nth-child(3) {
   animation-name: slide-3;
-  background-image: url("../images//slide-3.jpeg");
+  background-image: url("../images/slide-3.jpeg");
   left: 200%;
 }
 .slides__box {
@@ -437,6 +438,36 @@ html, body {
   right: 1.25rem;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 1.25rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+}
+.nav__btn {
+  background-image: url("../images/arrow-1.svg");
+  background-repeat: no-repeat;
+  width: 2.875rem;
+  height: 2.875rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  text-indent: -999px;
+  opacity: 0.5;
+  transition: opacity 400ms;
+}
+.nav__btn:hover {
+  opacity: 1;
+}
+.nav__btn.nav__btn--prev {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=app.css.map */

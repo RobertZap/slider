@@ -1,7 +1,7 @@
 @import "../functions";
 @import "../utils/animation";
 
-$slide-height: rem(300px);
+$slide-height: rem(500px);
 
 .slider {
   background-color: blue;
@@ -23,7 +23,7 @@ $slide-height: rem(300px);
     left: 0;
     width: 100%;
     min-height: $slide-height;
-    //animation-duration: 10s;
+    animation-duration: 10s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     background-size: cover;
@@ -54,9 +54,6 @@ $slide-height: rem(300px);
     font-family: "Roboto Black", sans-serif;
   }
 
-  &__lead {
-  }
-
   &__link {
     color: inherit;
     text-decoration: none;
@@ -68,9 +65,32 @@ $slide-height: rem(300px);
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: rem(20px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 40px);
+  box-sizing: border-box;
   &__btn {
-    &.nav__btn--prev {
+    background-image: url("#{$img-path}/arrow-1.svg");
+    background-repeat: no-repeat;
+    width: rem(46px);
+    height: rem(46px);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -999px;
+    opacity: 0.5;
+    transition: opacity 400ms;
+    &:hover {
+      opacity: 1;
+    }
 
+    &.nav__btn--prev {
+      transform: rotate(180deg);
     }
   }
 }
