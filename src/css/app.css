@@ -307,6 +307,22 @@ template {
   display: none;
 }
 
+.layout {
+  width: 100%;
+  margin-inline: auto;
+  transition: width 400ms;
+}
+@media screen and (min-width: 31.25rem) {
+  .layout {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 31.25rem) {
+  .layout {
+    width: 50%;
+  }
+}
+
 @font-face {
   font-family: "Roboto Black";
   src: url("../fonts/roboto-black-webfont.woff2") format("woff2"), url("../fonts/roboto-black-webfont.woff") format("woff");
